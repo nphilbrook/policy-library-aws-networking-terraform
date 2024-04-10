@@ -1,6 +1,10 @@
 # Copyright (c) HashiCorp, Inc.
 # SPDX-License-Identifier: MPL-2.0
 
+module "tfplan-functions" {
+  source = "./common-functions/tfplan-functions/tfplan-functions.sentinel"
+}
+
 policy "deny-public-ssh-acl-rules" {
   source = "./policies/deny-public-ssh-acl-rules/deny-public-ssh-acl-rules.sentinel"
   enforcement_level = "soft-mandatory"

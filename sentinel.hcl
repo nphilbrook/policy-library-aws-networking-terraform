@@ -20,7 +20,7 @@ policy "restrict-all-vpc-traffic-acl-rules" {
   enforcement_level = "soft-mandatory"
 }
 
-policy "check-ec2-created-by-tag" {
-  source = "./policies/check-ec2-created-by-tag/check-ec2-created-by-tag.sentinel"
+policy "check-ec2-environment-tag" {
+  source = "./policies/check-ec2-environment-tag/check-ec2-environment-tag.sentinel"
   enforcement_level = "soft-mandatory"
 }
